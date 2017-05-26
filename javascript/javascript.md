@@ -27,5 +27,3 @@ JSON是有非常严格的定义
 字典（与JSON格式很像）：https://github.com/airbnb/javascript   参考19.2
 建议最后一个数据加上逗号，便于阅读编程。Babel会自动将最后的逗号去掉。
 
-## 表id创建
-ObjectId https://mongodb.github.io/node-mongodb-native/api-bson-generated/objectid.html

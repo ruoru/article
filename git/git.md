@@ -143,6 +143,7 @@ master2
 |  
 |  
 master1 -- branchA  
+
 将branchA合并到master分支上：
 1. 切换到本地对应远程的master分支；
 2. 拉取远程的更新并合并进本地master分支；
@@ -169,8 +170,7 @@ demo/.svn/
 .idea/*
 ```
 
-## 更新包
-yarn upgrade [packageName]
-
-## 缓存和缓冲区别
-https://my.oschina.net/swingcoder/blog/479951
+## git 修改远程仓库名称
+```
+git remote add =name= root@=ip=:=repositorieName=
+```
