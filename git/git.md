@@ -152,6 +152,12 @@ master1 -- branchA
 ## 删除文件夹以及该文件夹下所有文件
 git rm 文件 -r -f
 
+## 删除远程分支
+```
+git push [远程名]: [分支名]
+eg: git push dev :add/class-startsAt-endsAt
+```
+
 ## .gitignore
 .gitignore是一个文件，.gitignore位置在项目根目录上，通常我们是不希望git将本地的编辑器缓存的内容，包括.git文件，以及庞大的node-modules安装包推送到远程，如果仓库里含有.gitignore这个文件，git push会识别哪些是你不想推送到远端的文件，并选择性不推送到远端
 来看一个.gitignore文件
