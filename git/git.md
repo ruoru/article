@@ -154,7 +154,7 @@ git rm 文件 -r -f
 
 ## 删除远程分支
 ```
-git push [远程名]: [分支名]
+git push [远程名] :[分支名]
 eg: git push dev :add/class-startsAt-endsAt
 ```
 
