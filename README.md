@@ -2,8 +2,10 @@
 
 ## Contents
 - [me](story/story.md)
-  - [...](#sec-1-1)
-- [JavaScript](javascript/javascript.md)
+- [Book]
+  - [领域驱动设计](book/领域驱动设计 精简版.pdf)
 - [Git](git/git.md)
+- [JavaScript](javascript/javascript.md)
+- [DataBase](dataBase/dataBase.md)
 - [mongoDB](mongodb/mongodb.md)
 - [other](other/other.md)
