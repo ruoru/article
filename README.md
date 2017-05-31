@@ -2,7 +2,7 @@
 
 ## Contents
 - [me](story/story.md)
-- [Book]
+- [Book](book/)
   - [领域驱动设计](book/领域驱动设计 精简版.pdf)
 - [Git](git/git.md)
 - [JavaScript](javascript/javascript.md)
