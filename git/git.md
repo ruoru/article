@@ -180,3 +180,7 @@ demo/.svn/
 ```
 git remote add =name= root@=ip=:=repositorieName=
 ```
+
+## git License 开源协议
+[阮一峰](http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
+[百度解释](http://baike.baidu.com/item/%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE)
