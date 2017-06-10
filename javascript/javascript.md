@@ -1,3 +1,6 @@
+# 跟着9张思维导图学习Javascript
+http://www.cnblogs.com/coco1s/p/3953653.html
+
 ## Function
 ### Function 值的问题
 ```javascript
