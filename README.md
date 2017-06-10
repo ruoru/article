@@ -7,7 +7,7 @@
 - [Linux](linux/linux.md)
 - [Git](git/git.md)
 - [JavaScript](javascript/javascript.md)
-- [NodeJs](node/nodejs.md)
+- [NodeJs](nodejs/nodejs.md)
 - [DataBase](dataBase/dataBase.md)
 - [mongoDB](mongodb/mongodb.md)
 - [other](other/other.md)
