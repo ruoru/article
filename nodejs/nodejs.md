@@ -12,4 +12,4 @@ http://blog.csdn.net/Mingcai_Xiong/article/details/52832715
 
 ## LiuTaw nodejs思维导图
 http://liutaw.github.io/2017/02/16/nodejs/
-![xmind](nodejs.xmind)
+[xmind](nodejs.xmind)
