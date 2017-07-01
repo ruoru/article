@@ -60,3 +60,28 @@
 [client和daemon](03.png)
 
 ## Docker容器相关技术简介
+### Namespaces 命名空间
+  * 编程语言 封装 --> 代码隔离
+  * 操作系统 系统资源的隔离 进程 网络 文件系统...
+-------------------------------
+  * PID(Process ID) 进程隔离
+  * NET(Network) 管理网络接口
+  * IPC(InterProcess Communication) 管理跨进程通信的访问
+  * MNT(Mount) 管理挂载点
+  * UTS(Unix Timesharing System) 隔离内核和版本标识
+
+### Control groips (cgroups)控制组
+  * 用来分配资源
+  * 来源google
+  * Linux Kernel
+-------------------------------
+  * 资源限制
+  * 优先级设定
+  * 资源计量
+  * 资源控制
+-------------------------------
+#### Docker容器能力
+* 文件系统隔离：每个容器都有自己的root文件系统
+* 每个容器都运行在自己的进程环境中
+* 容器间的虚拟网络接口和IP地址都是分开的
+* 资源隔离和分组：使用cgroups将CPU和内存之类的资源独立分配至每个Docker容器
