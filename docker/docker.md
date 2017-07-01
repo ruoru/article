@@ -57,7 +57,7 @@
   * 公有仓库 DockerHub
   * 私有仓库 
 
-[client和daemon](03.png)
+![client和daemon](03.png)
 
 ## Docker容器相关技术简介
 ### Namespaces 命名空间
