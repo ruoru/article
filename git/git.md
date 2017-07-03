@@ -14,6 +14,9 @@
 1. 越来越多的开源项目迁移到Git。
 2. 代码版本控制。
 
+## git 阮一峰教程
+http://www.ruanyifeng.com/blog/2014/06/git_remote.html
+
 # Git安装与简单配置
 ## 安装
 [Git官网](https://git-scm.com/)
