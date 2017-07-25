@@ -34,3 +34,9 @@ export PATH=$PATH:$HOME/go/bin:$GOPATH/bin
 
 bash .bashrc  //重启生效
 ```
+
+## go 本地查看文档（以浏览器方式）
+```
+godoc -http=:[port]
+http:localhost:[port]
+```
