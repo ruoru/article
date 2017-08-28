@@ -1,3 +1,60 @@
+# ECMA Script
+![js发布流程](./t39-0.png)
+
+* ES6
+  * [ES6新特性](http://imweb.io/topic/55e330d6771670e207a16bbb)
+* ES7
+  * 新增两个特性
+    1. Array.prototype.includes (Domenic Denicola, Rick Waldron)
+      数组的 includes 方法有如下签名：
+
+      Array.prototype.includes（value：任意值）： boolean
+      如果传入的值在当前数组（this）中则返回 true，否则返回 false：
+      ```js
+      ['a', 'b', 'c'].includes('a')
+      true
+      ['a', 'b', 'c'].includes('d')
+      false
+      ```
+      includes 方法与 indexOf 方法很相似——下面两个表达式是等价的：
+
+      arr.includes(x)
+      arr.indexOf(x) >= 0
+      唯一的区别是 includes() 方法能找到 NaN，而 indexOf() 不行：
+      ```js
+      [NaN].includes(NaN)
+      true
+      [NaN].indexOf(NaN)
+      -1
+      ```
+      includes 不会区分 +0 和 -0 （这也与其他 JavaScript 特性表现一致）：
+
+      ```js
+      [-0].includes(+0)
+      true
+      ```
+      类型数组也有 includes() 方法：
+
+      Typed Arrays will also have a method includes():
+      ```js
+      let tarr = Uint8Array.of(12, 5, 3);
+      console.log(tarr.includes(5)); // true
+      ```
+      参考：https://www.w3ctech.com/topic/1614
+
+    2. `**` is an infix operator for exponentiation:
+      `x ** y` produces the same result as `Math.pow(x, y)`
+      Examples:
+      ```
+      let squared = 3 ** 2; // 9
+
+      let num = 3;
+      num **= 2;
+      console.log(num); // 9
+      ```
+* ES8
+  * [ES8新增特性](https://zhuanlan.zhihu.com/p/27844393)
+
 # 跟着9张思维导图学习Javascript
 http://www.cnblogs.com/coco1s/p/3953653.html
 
