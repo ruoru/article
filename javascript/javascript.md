@@ -98,6 +98,43 @@ JSON是有非常严格的定义
 
 ## 零散知识点
 
+### 值判断问题
+
+```javascript
+function getEquals() {
+  const arr = [{}, !{}, 0, !0, [], ![], true, false, undefined, !undefined, null, !null];
+  const arr1 = [{}, !{}, 0, !0, [], ![], true, false, undefined, !undefined, null, !null];
+
+  for (let i = 0; i < arr.length; i++) {
+    const item1 = arr[i];
+    for (let j = i; j < arr.length; j++) {
+      const item2 = arr1[j];
+      if (item1 == item2 && i !== j) {
+        console.log(`${i} == ${j}`, item1 == item2);
+      } else if (item1 != item2 && i === j) {
+        console.log(`${i} != ${j}`, item1 == item2);
+      }
+    }
+  }
+}
+
+// case ===:
+// false === !{} === ![]
+// true === !0 === !undefined === !null
+
+// case !==:
+// [] !== [], {} !== {}
+
+// case ==:
+// false == !{} == ![] == 0 == []
+// true == !0 == !undefined == !null
+// undefined == null
+
+// case !=:
+// [] !== [], {} !== {}
+```
+
+
 ### var 与 let const的区别
 
 * let命令
