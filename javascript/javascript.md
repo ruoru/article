@@ -1,11 +1,12 @@
-## Javascript
+# Javascript
 
 [TOC]
 
 ## ECMA Script
-![js发布流程](./t39-0.png)
+![es发布流程](./t39-0.png)
 
 * ES6
+  
   * [ES6新特性](http://imweb.io/topic/55e330d6771670e207a16bbb)
 * ES7
   1. Array.prototype.includes (Domenic Denicola, Rick Waldron)
@@ -57,6 +58,7 @@
     console.log(num); // 9
     ```
 * ES8
+  
   * [ES8新增特性](https://zhuanlan.zhihu.com/p/27844393)
 
 ## 跟着9张思维导图学习Javascript
@@ -210,5 +212,14 @@ a = ['script'];    // error
 2. 避免用来计数的循环变量泄露为全局变量
 3. 引入了块级作用域，允许在块级作用域之中声明函数
 
-
 [1]: [2017面试分享（js面试题记录）](https://segmentfault.com/a/1190000013827826?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)
+
+## npm
+
+### package lock 问题
+
+1. npm 5.0.x 版本，不管 package.json 怎么变，npm install 时都会根据 package-lock.json 文件下载。这个 [issue #16866 · npm/npm](https://github.com/npm/npm/issues/16866) 控诉了这个问题，明明手动改了 package.json，为啥不给我升级包！然后就导致了5.1.0的问题。
+
+2. 5.1.0版本后，npm install 会无视 package-lock.json 文件去下载最新的npm包，然后有人提了这个[issue #17979 · npm/npm](https://github.com/npm/npm/issues/17979) 控诉这个问题，最后演变成5.4.2版本后的规则。
+
+3. 5.4.2版本后 [issue #17979 · npm/npm](https://github.com/npm/npm/issues/17979) 大致意思是，如果改了package.json，且 package.json 和 package-lock.json 文件不同，那么执行 npm install 时 npm 会根据 package 中的版本号以及语义含义去下载最新的包，并更新至 package-lock.json。如果两者是同一状态，那么执行 npm install 都会根据 lock 下载，不会理会 package 实际包的版本是否有新。
