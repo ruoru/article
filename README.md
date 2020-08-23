@@ -18,3 +18,10 @@
 - [NodeJs](nodejs/nodejs.md)
 - [other](other/other.md)
 - [software](software/)
+
+
+### Learn
+#### 编译原理
+http://web.stanford.edu/class/cs143/
+https://suif.stanford.edu/~courses/cs243/
+http://web.stanford.edu/class/cs343/
